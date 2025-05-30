@@ -9,9 +9,8 @@ const api = axios.create({
   headers: { "Content-Type": "application/json" },
 });
 
-export const getData = async ({ queryKey} : QueryFunctionContext) => {
-    const [_key, page, perPage] = queryKey;
-    const { data } = await api.get("/tickets", {
+export const getData = async (page: number, perPage: number) => {
+    const { data } = await api.get("/data", {
         params: {
             _page: page,
             _per_page: perPage,
