@@ -1,11 +1,5 @@
-export type getTicketsType = {
-    page?: number;
-    perPage?: number;
-}
-
-type BaseField = {
+export type FieldDefinition = {
   label: string;
-  type: string;
   required?: boolean;
   readOnly?: boolean;
   nullable?: boolean;
@@ -13,26 +7,6 @@ type BaseField = {
   maxLength?: number;
   pattern?: string;
 };
-
-type EnumField = BaseField & {
-  type: 'enum';
-  options: string[];
-  labelMap: Record<string, string>;
-};
-
-type StringField = BaseField & {
-  type: 'string';
-};
-
-type BooleanField = BaseField & {
-  type: 'boolean';
-};
-
-type DatetimeField = BaseField & {
-  type: 'datetime';
-};
-
-type FieldDefinition = StringField | EnumField | BooleanField | DatetimeField;
 
 export type MetaSchema = Record<string, FieldDefinition>;
 
@@ -45,4 +19,3 @@ export type DataPage<T> = {
   items: number;
   data: T[];
 };
-

@@ -6,7 +6,7 @@ import { DynamicTable } from "./components/DynamicTable";
 import type { MetaSchema } from "./features/types";
 
 function App() {
-  const { data, isLoading } = useQuery<MetaSchema>({
+  const { data } = useQuery<MetaSchema>({
     queryKey: ["meta"],
     queryFn: getMeta
   })
@@ -14,7 +14,7 @@ function App() {
   if (data)
     return (
     <div className="w-svw h-svh flex p-6 items-center justify-center">
-      <Card className="w-full max-h-[2000px] max-w-7xl h-full">
+      <Card className="w-full max-h-[2000px] max-w-[1920px] h-full">
         <CardHeader className="flex justify-between">
           <h1 className="font-semibold">Тестовое задание</h1>
           <Button size="sm">Добавить запись</Button>
