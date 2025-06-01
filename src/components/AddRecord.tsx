@@ -81,10 +81,10 @@ export function AddRecord({ meta }: { meta: MetaSchema }) {
         <Button size="sm">Добавить запись</Button>
       </DialogTrigger>
 
-      <DialogContent className="sm:max-w-[1024px] sm:w-[calc(100%-3rem)] max-w-full sm:max-h-10/12 h-full sm:h-fit flex flex-col rounded-none sm:rounded-lg border-none sm:border">
+      <DialogContent className="sm:max-w-[1024px] sm:w-[calc(100%-3rem)] max-w-full sm:max-h-10/12 h-full sm:h-fit flex flex-col rounded-none sm:rounded-lg border-none sm:border-solid">
         <DialogHeader className="text-left">
           <DialogTitle>Добавить запись</DialogTitle>
-          <DialogDescription>Заполни обязательные поля</DialogDescription>
+          <DialogDescription>Заполните обязательные поля</DialogDescription>
         </DialogHeader>
 
         <ScrollArea className="flex-1 overflow-hidden">
