@@ -28,7 +28,7 @@ function Row<MS extends MetaSchema>({ record, columns }: RowProps<MS>) {
     <TableRow className="min-h-9">
       {columns.map((colKey) => (
         <TableCell key={`${String(record.id)}-${String(colKey)}`}>
-          {record[colKey] as React.ReactNode}
+          {record[colKey] !== "" ? (record[colKey] as React.ReactNode) : "—" }
         </TableCell>
       ))}
     </TableRow>

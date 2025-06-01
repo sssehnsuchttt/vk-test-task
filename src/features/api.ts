@@ -23,3 +23,13 @@ export async function getMeta(): Promise<MetaSchema> {
   const response: AxiosResponse<MetaSchema> = await api.get("/meta");
   return response.data;
 }
+
+
+
+export async function createRecord(
+  payload: Record<string, unknown>
+) {
+  console.log(payload)
+  const res = await api.post("/data", payload);
+  return res.data;
+}
