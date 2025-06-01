@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+# Тестовое задание – VK Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Небольшое приложение на **React + TypeScript**, реализующее таблицу с ленивой подгрузкой и формой создания записи.
 
-Currently, two official plugins are available:
+## Описание
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Приложение позволяет:
 
-## Expanding the ESLint configuration
+- Отображать таблицу с произвольным числом колонок (5–15)
+- Загружать данные с сервера и подгружать их лениво при прокрутке (infinite scroll)
+- Создавать новую запись через форму с валидацией
+- Динамически подстраиваться под `meta`-схему из API (типы, ограничения, обязательность полей)
+- Отправлять форму на сервер и обновлять таблицу без перезагрузки
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Стек
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React**
+- **Vite**
+- **Vitest**
+- **TypeScript** 
+- **react-hook-form + zod**
+- **@tanstack/react-query** 
+- **shadcn/ui + TailwindCSS** 
+- **json-server** 
+
+## Почему нет стейт-менеджера
+
+Cтейт-менеджер не используется, так как он здесь просто не пригодился, достаточно функционала **React Query**. Обновление данных в таблице при добавлении новой записи происходит через `queryClient.invalidateQueries({ queryKey: ["data"] })`
+
+## Запуск проекта
+
+1. Установить зависимости:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Запустить `json-server`:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npx json-server db.json
 ```
+
+3. Запустить фронтенд:
+
+```bash
+npm run dev
+```
+
+## Тесты
+
+Покрыт компонент `AddRecord`:
+
+- Проверка валидации полей
+- Проверка сетевого запроса и обновления данных
