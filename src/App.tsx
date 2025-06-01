@@ -1,10 +1,10 @@
-import { Button } from "./components/ui/button";
 import { Card, CardHeader, CardContent } from "./components/ui/card";
 import { useQuery } from "@tanstack/react-query";
 import { getMeta } from "./features/api";
 import { DynamicTable } from "./components/DynamicTable";
 import { AddRecord } from "./components/AddRecord";
 import type { MetaSchema } from "./features/types";
+import { Toaster } from "@/components/ui/sonner"
 
 function App() {
   const { data } = useQuery<MetaSchema>({
@@ -15,6 +15,7 @@ function App() {
   if (data)
     return (
     <div className="w-svw h-svh flex p-6 items-center justify-center">
+      <Toaster />
       <Card className="w-full max-h-[2000px] max-w-[1920px] h-full">
         <CardHeader className="flex justify-between">
           <h1 className="font-semibold">Тестовое задание</h1>

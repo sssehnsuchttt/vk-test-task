@@ -26,6 +26,7 @@ import { Input } from "@/components/ui/input";
 import type { MetaSchema } from "@/features/types";
 import { Badge } from "@/components/ui/badge";
 import { createRecord } from "@/features/api";
+import { toast } from "sonner";
 
 const zodSchema = (meta: MetaSchema) =>
   z.object(
@@ -64,6 +65,7 @@ export function AddRecord({ meta }: { meta: MetaSchema }) {
       queryClient.invalidateQueries({ queryKey: ["data"] });
       form.reset();
       setOpen(false);
+      toast.success("Добавлена новая запись");
     },
   });
 
@@ -87,9 +89,7 @@ export function AddRecord({ meta }: { meta: MetaSchema }) {
 
         <ScrollArea className="flex-1 overflow-hidden pr-4">
           <Form {...form}>
-            <form
-              className="grid gap-4 grid-cols-1 sm:grid-cols-2"
-            >
+            <form className="grid gap-4 grid-cols-1 sm:grid-cols-2">
               {editableEntries.map(([key, def]) => (
                 <FormField
                   key={key}
@@ -99,7 +99,9 @@ export function AddRecord({ meta }: { meta: MetaSchema }) {
                     <FormItem className="last:col-span-full">
                       <FormLabel>
                         {def.label}
-                        {def.required && <Badge variant="destructive">Обязательное</Badge>}
+                        {def.required && (
+                          <Badge variant="destructive">Обязательное</Badge>
+                        )}
                       </FormLabel>
                       <FormControl>
                         <Input placeholder={def.label} {...field} />
