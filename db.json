@@ -1,0 +1,2053 @@
+{
+  "meta": {
+    "id": {
+      "label": "ID заявки",
+      "type": "string",
+      "readOnly": true
+    },
+    "location": {
+      "label": "Локация",
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "model": {
+      "label": "Модель сервера",
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "rack": {
+      "label": "Номер стойки",
+      "type": "string",
+      "required": true,
+      "pattern": "^R\\d{2}$"
+    },
+    "contact": {
+      "label": "Контактное лицо",
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "email": {
+      "label": "Email",
+      "type": "string",
+      "required": true,
+      "pattern": "^[\\w.-]+@[\\w.-]+\\.[a-zA-Z]{2,}$"
+    },
+    "requestDate": {
+      "label": "Дата запроса",
+      "type": "string",
+      "required": true,
+      "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
+    },
+    "notes": {
+      "label": "Доп. информация",
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    }
+  },
+  "data": [
+    {
+      "id": "HW-0001",
+      "location": "Казань",
+      "model": "PowerEdge R740",
+      "rack": "R33",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va18@infra.net",
+      "requestDate": "10.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0002",
+      "location": "Омск",
+      "model": "Fujitsu RX2540",
+      "rack": "R39",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv56@it.local",
+      "requestDate": "01.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0003",
+      "location": "Казань",
+      "model": "Fujitsu RX2540",
+      "rack": "R27",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv50@infra.net",
+      "requestDate": "09.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0004",
+      "location": "Омск",
+      "model": "PowerEdge R740",
+      "rack": "R30",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv23@it.local",
+      "requestDate": "23.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0005",
+      "location": "Краснодар",
+      "model": "ThinkSystem SR650",
+      "rack": "R22",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv80@hardware.com",
+      "requestDate": "29.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0006",
+      "location": "Москва",
+      "model": "DL360 Gen10",
+      "rack": "R37",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv2@hardware.com",
+      "requestDate": "27.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0007",
+      "location": "Екатеринбург",
+      "model": "ThinkSystem SR650",
+      "rack": "R32",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en11@infra.net",
+      "requestDate": "25.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0008",
+      "location": "Омск",
+      "model": "DL360 Gen10",
+      "rack": "R19",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv48@infra.net",
+      "requestDate": "23.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0009",
+      "location": "Казань",
+      "model": "ThinkSystem SR650",
+      "rack": "R34",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en55@it.local",
+      "requestDate": "14.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0010",
+      "location": "Москва",
+      "model": "PowerEdge R740",
+      "rack": "R08",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii65@it.local",
+      "requestDate": "02.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0011",
+      "location": "Москва",
+      "model": "Fujitsu RX2540",
+      "rack": "R30",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii24@infra.net",
+      "requestDate": "30.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0012",
+      "location": "Омск",
+      "model": "PowerEdge R740",
+      "rack": "R39",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv68@hardware.com",
+      "requestDate": "27.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0013",
+      "location": "Москва",
+      "model": "DL360 Gen10",
+      "rack": "R35",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv52@infra.net",
+      "requestDate": "24.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0014",
+      "location": "Новосибирск",
+      "model": "ThinkSystem SR650",
+      "rack": "R38",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd69@infra.net",
+      "requestDate": "11.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0015",
+      "location": "Екатеринбург",
+      "model": "PowerEdge R740",
+      "rack": "R19",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en81@infra.net",
+      "requestDate": "04.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0016",
+      "location": "Красноярск",
+      "model": "DL360 Gen10",
+      "rack": "R38",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va66@infra.net",
+      "requestDate": "26.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0017",
+      "location": "Москва",
+      "model": "ThinkSystem SR650",
+      "rack": "R32",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv80@infra.net",
+      "requestDate": "23.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0018",
+      "location": "Новосибирск",
+      "model": "Fujitsu RX2540",
+      "rack": "R38",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv27@it.local",
+      "requestDate": "11.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0019",
+      "location": "Москва",
+      "model": "PowerEdge R740",
+      "rack": "R12",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii61@infra.net",
+      "requestDate": "25.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0020",
+      "location": "Казань",
+      "model": "PowerEdge R740",
+      "rack": "R03",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va9@it.local",
+      "requestDate": "13.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0021",
+      "location": "Екатеринбург",
+      "model": "Fujitsu RX2540",
+      "rack": "R02",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv70@it.local",
+      "requestDate": "07.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0022",
+      "location": "Казань",
+      "model": "Supermicro 2029P",
+      "rack": "R39",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv10@it.local",
+      "requestDate": "18.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0023",
+      "location": "Екатеринбург",
+      "model": "Supermicro 2029P",
+      "rack": "R37",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv91@infra.net",
+      "requestDate": "19.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0024",
+      "location": "Казань",
+      "model": "ThinkSystem SR650",
+      "rack": "R32",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en44@infra.net",
+      "requestDate": "14.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0025",
+      "location": "Казань",
+      "model": "PowerEdge R740",
+      "rack": "R12",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv41@hardware.com",
+      "requestDate": "15.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0026",
+      "location": "Казань",
+      "model": "DL360 Gen10",
+      "rack": "R11",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii82@hardware.com",
+      "requestDate": "14.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0027",
+      "location": "Новосибирск",
+      "model": "Supermicro 2029P",
+      "rack": "R31",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv51@infra.net",
+      "requestDate": "02.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0028",
+      "location": "Москва",
+      "model": "DL360 Gen10",
+      "rack": "R01",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv14@infra.net",
+      "requestDate": "22.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0029",
+      "location": "Новосибирск",
+      "model": "PowerEdge R740",
+      "rack": "R30",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii37@it.local",
+      "requestDate": "16.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0030",
+      "location": "Красноярск",
+      "model": "Fujitsu RX2540",
+      "rack": "R04",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en58@infra.net",
+      "requestDate": "07.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0031",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R39",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va61@it.local",
+      "requestDate": "21.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0032",
+      "location": "Красноярск",
+      "model": "Fujitsu RX2540",
+      "rack": "R36",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv49@hardware.com",
+      "requestDate": "22.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0033",
+      "location": "Москва",
+      "model": "Supermicro 2029P",
+      "rack": "R35",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii93@infra.net",
+      "requestDate": "28.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0034",
+      "location": "Москва",
+      "model": "Fujitsu RX2540",
+      "rack": "R35",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv77@infra.net",
+      "requestDate": "01.06.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0035",
+      "location": "Екатеринбург",
+      "model": "Supermicro 2029P",
+      "rack": "R32",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv31@hardware.com",
+      "requestDate": "15.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0036",
+      "location": "Краснодар",
+      "model": "Supermicro 2029P",
+      "rack": "R18",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv13@it.local",
+      "requestDate": "14.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0037",
+      "location": "Красноярск",
+      "model": "DL360 Gen10",
+      "rack": "R38",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en76@infra.net",
+      "requestDate": "11.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0038",
+      "location": "Новосибирск",
+      "model": "Supermicro 2029P",
+      "rack": "R25",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv60@it.local",
+      "requestDate": "30.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0039",
+      "location": "Казань",
+      "model": "ThinkSystem SR650",
+      "rack": "R17",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va74@it.local",
+      "requestDate": "26.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0040",
+      "location": "Новосибирск",
+      "model": "PowerEdge R740",
+      "rack": "R15",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv61@it.local",
+      "requestDate": "08.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0041",
+      "location": "Красноярск",
+      "model": "Fujitsu RX2540",
+      "rack": "R09",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va9@it.local",
+      "requestDate": "26.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0042",
+      "location": "Красноярск",
+      "model": "Fujitsu RX2540",
+      "rack": "R11",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv53@hardware.com",
+      "requestDate": "27.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0043",
+      "location": "Москва",
+      "model": "DL360 Gen10",
+      "rack": "R31",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va63@hardware.com",
+      "requestDate": "01.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0044",
+      "location": "Красноярск",
+      "model": "PowerEdge R740",
+      "rack": "R09",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii12@it.local",
+      "requestDate": "28.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0045",
+      "location": "Казань",
+      "model": "Supermicro 2029P",
+      "rack": "R02",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv36@infra.net",
+      "requestDate": "21.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0046",
+      "location": "Екатеринбург",
+      "model": "Fujitsu RX2540",
+      "rack": "R08",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv65@infra.net",
+      "requestDate": "16.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0047",
+      "location": "Новосибирск",
+      "model": "ThinkSystem SR650",
+      "rack": "R17",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii94@hardware.com",
+      "requestDate": "02.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0048",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R19",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv29@hardware.com",
+      "requestDate": "27.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0049",
+      "location": "Москва",
+      "model": "Fujitsu RX2540",
+      "rack": "R14",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd10@it.local",
+      "requestDate": "06.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0050",
+      "location": "Новосибирск",
+      "model": "ThinkSystem SR650",
+      "rack": "R35",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd51@infra.net",
+      "requestDate": "26.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0051",
+      "location": "Казань",
+      "model": "Fujitsu RX2540",
+      "rack": "R08",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va20@infra.net",
+      "requestDate": "16.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0052",
+      "location": "Краснодар",
+      "model": "ThinkSystem SR650",
+      "rack": "R10",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii96@it.local",
+      "requestDate": "10.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0053",
+      "location": "Красноярск",
+      "model": "Supermicro 2029P",
+      "rack": "R15",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd33@infra.net",
+      "requestDate": "21.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0054",
+      "location": "Екатеринбург",
+      "model": "PowerEdge R740",
+      "rack": "R10",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va32@infra.net",
+      "requestDate": "31.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0055",
+      "location": "Красноярск",
+      "model": "PowerEdge R740",
+      "rack": "R31",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii64@it.local",
+      "requestDate": "27.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0056",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R32",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv82@hardware.com",
+      "requestDate": "13.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0057",
+      "location": "Краснодар",
+      "model": "ThinkSystem SR650",
+      "rack": "R15",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va21@it.local",
+      "requestDate": "19.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0058",
+      "location": "Екатеринбург",
+      "model": "ThinkSystem SR650",
+      "rack": "R02",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii89@hardware.com",
+      "requestDate": "18.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0059",
+      "location": "Красноярск",
+      "model": "Fujitsu RX2540",
+      "rack": "R27",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd19@infra.net",
+      "requestDate": "24.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0060",
+      "location": "Казань",
+      "model": "PowerEdge R740",
+      "rack": "R29",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en48@it.local",
+      "requestDate": "08.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0061",
+      "location": "Казань",
+      "model": "PowerEdge R740",
+      "rack": "R24",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en39@hardware.com",
+      "requestDate": "21.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0062",
+      "location": "Казань",
+      "model": "Fujitsu RX2540",
+      "rack": "R02",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en81@it.local",
+      "requestDate": "07.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0063",
+      "location": "Екатеринбург",
+      "model": "ThinkSystem SR650",
+      "rack": "R05",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va94@infra.net",
+      "requestDate": "23.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0064",
+      "location": "Казань",
+      "model": "DL360 Gen10",
+      "rack": "R07",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd48@it.local",
+      "requestDate": "24.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0065",
+      "location": "Омск",
+      "model": "DL360 Gen10",
+      "rack": "R08",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv86@infra.net",
+      "requestDate": "18.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0066",
+      "location": "Краснодар",
+      "model": "DL360 Gen10",
+      "rack": "R11",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va0@hardware.com",
+      "requestDate": "23.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0067",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R13",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii55@hardware.com",
+      "requestDate": "01.06.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0068",
+      "location": "Екатеринбург",
+      "model": "ThinkSystem SR650",
+      "rack": "R35",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii78@infra.net",
+      "requestDate": "01.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0069",
+      "location": "Новосибирск",
+      "model": "PowerEdge R740",
+      "rack": "R32",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en33@infra.net",
+      "requestDate": "26.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0070",
+      "location": "Омск",
+      "model": "DL360 Gen10",
+      "rack": "R10",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv87@infra.net",
+      "requestDate": "01.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0071",
+      "location": "Краснодар",
+      "model": "ThinkSystem SR650",
+      "rack": "R16",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va12@it.local",
+      "requestDate": "14.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0072",
+      "location": "Красноярск",
+      "model": "PowerEdge R740",
+      "rack": "R05",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv98@infra.net",
+      "requestDate": "07.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0073",
+      "location": "Казань",
+      "model": "DL360 Gen10",
+      "rack": "R35",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv88@infra.net",
+      "requestDate": "20.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0074",
+      "location": "Красноярск",
+      "model": "ThinkSystem SR650",
+      "rack": "R35",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en32@hardware.com",
+      "requestDate": "13.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0075",
+      "location": "Новосибирск",
+      "model": "DL360 Gen10",
+      "rack": "R21",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv90@it.local",
+      "requestDate": "05.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0076",
+      "location": "Краснодар",
+      "model": "Fujitsu RX2540",
+      "rack": "R11",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv79@hardware.com",
+      "requestDate": "04.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0077",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R25",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va90@infra.net",
+      "requestDate": "02.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0078",
+      "location": "Москва",
+      "model": "DL360 Gen10",
+      "rack": "R21",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd29@hardware.com",
+      "requestDate": "28.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0079",
+      "location": "Красноярск",
+      "model": "PowerEdge R740",
+      "rack": "R28",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en3@it.local",
+      "requestDate": "11.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0080",
+      "location": "Красноярск",
+      "model": "Fujitsu RX2540",
+      "rack": "R39",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd45@hardware.com",
+      "requestDate": "25.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0081",
+      "location": "Омск",
+      "model": "DL360 Gen10",
+      "rack": "R27",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii88@infra.net",
+      "requestDate": "23.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0082",
+      "location": "Красноярск",
+      "model": "Supermicro 2029P",
+      "rack": "R03",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va17@hardware.com",
+      "requestDate": "11.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0083",
+      "location": "Красноярск",
+      "model": "Supermicro 2029P",
+      "rack": "R16",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv56@hardware.com",
+      "requestDate": "31.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0084",
+      "location": "Омск",
+      "model": "PowerEdge R740",
+      "rack": "R21",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en13@hardware.com",
+      "requestDate": "16.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0085",
+      "location": "Казань",
+      "model": "PowerEdge R740",
+      "rack": "R10",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va20@hardware.com",
+      "requestDate": "25.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0086",
+      "location": "Москва",
+      "model": "PowerEdge R740",
+      "rack": "R12",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd14@it.local",
+      "requestDate": "24.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0087",
+      "location": "Казань",
+      "model": "ThinkSystem SR650",
+      "rack": "R28",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv47@infra.net",
+      "requestDate": "20.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0088",
+      "location": "Омск",
+      "model": "Fujitsu RX2540",
+      "rack": "R30",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en86@infra.net",
+      "requestDate": "14.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0089",
+      "location": "Красноярск",
+      "model": "Fujitsu RX2540",
+      "rack": "R01",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va76@hardware.com",
+      "requestDate": "28.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0090",
+      "location": "Красноярск",
+      "model": "DL360 Gen10",
+      "rack": "R02",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii39@hardware.com",
+      "requestDate": "02.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0091",
+      "location": "Москва",
+      "model": "ThinkSystem SR650",
+      "rack": "R07",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii85@it.local",
+      "requestDate": "27.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0092",
+      "location": "Казань",
+      "model": "DL360 Gen10",
+      "rack": "R01",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii75@it.local",
+      "requestDate": "29.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0093",
+      "location": "Москва",
+      "model": "ThinkSystem SR650",
+      "rack": "R15",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd3@hardware.com",
+      "requestDate": "09.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0094",
+      "location": "Краснодар",
+      "model": "PowerEdge R740",
+      "rack": "R20",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd94@hardware.com",
+      "requestDate": "19.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0095",
+      "location": "Казань",
+      "model": "DL360 Gen10",
+      "rack": "R22",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv59@infra.net",
+      "requestDate": "28.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0096",
+      "location": "Омск",
+      "model": "PowerEdge R740",
+      "rack": "R03",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv45@hardware.com",
+      "requestDate": "28.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0097",
+      "location": "Москва",
+      "model": "ThinkSystem SR650",
+      "rack": "R12",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va8@it.local",
+      "requestDate": "20.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0098",
+      "location": "Красноярск",
+      "model": "ThinkSystem SR650",
+      "rack": "R18",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv28@infra.net",
+      "requestDate": "19.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0099",
+      "location": "Казань",
+      "model": "ThinkSystem SR650",
+      "rack": "R32",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv80@hardware.com",
+      "requestDate": "20.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0100",
+      "location": "Омск",
+      "model": "ThinkSystem SR650",
+      "rack": "R29",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii29@infra.net",
+      "requestDate": "31.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0101",
+      "location": "Казань",
+      "model": "DL360 Gen10",
+      "rack": "R22",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd41@hardware.com",
+      "requestDate": "06.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0102",
+      "location": "Новосибирск",
+      "model": "PowerEdge R740",
+      "rack": "R14",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv86@it.local",
+      "requestDate": "21.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0103",
+      "location": "Казань",
+      "model": "PowerEdge R740",
+      "rack": "R16",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii16@hardware.com",
+      "requestDate": "01.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0104",
+      "location": "Новосибирск",
+      "model": "PowerEdge R740",
+      "rack": "R33",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii33@hardware.com",
+      "requestDate": "21.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0105",
+      "location": "Москва",
+      "model": "Fujitsu RX2540",
+      "rack": "R25",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii78@hardware.com",
+      "requestDate": "15.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0106",
+      "location": "Казань",
+      "model": "DL360 Gen10",
+      "rack": "R04",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va27@hardware.com",
+      "requestDate": "14.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0107",
+      "location": "Москва",
+      "model": "Fujitsu RX2540",
+      "rack": "R25",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii61@it.local",
+      "requestDate": "19.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0108",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R07",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv72@it.local",
+      "requestDate": "17.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0109",
+      "location": "Казань",
+      "model": "DL360 Gen10",
+      "rack": "R25",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv57@hardware.com",
+      "requestDate": "13.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0110",
+      "location": "Новосибирск",
+      "model": "DL360 Gen10",
+      "rack": "R39",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv29@hardware.com",
+      "requestDate": "06.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0111",
+      "location": "Москва",
+      "model": "PowerEdge R740",
+      "rack": "R31",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va53@hardware.com",
+      "requestDate": "25.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0112",
+      "location": "Омск",
+      "model": "ThinkSystem SR650",
+      "rack": "R29",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd81@infra.net",
+      "requestDate": "31.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0113",
+      "location": "Новосибирск",
+      "model": "Supermicro 2029P",
+      "rack": "R13",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va33@infra.net",
+      "requestDate": "15.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0114",
+      "location": "Москва",
+      "model": "ThinkSystem SR650",
+      "rack": "R39",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en21@it.local",
+      "requestDate": "18.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0115",
+      "location": "Казань",
+      "model": "PowerEdge R740",
+      "rack": "R26",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd0@it.local",
+      "requestDate": "23.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0116",
+      "location": "Красноярск",
+      "model": "Supermicro 2029P",
+      "rack": "R06",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en41@hardware.com",
+      "requestDate": "23.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0117",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R22",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd29@hardware.com",
+      "requestDate": "23.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0118",
+      "location": "Омск",
+      "model": "ThinkSystem SR650",
+      "rack": "R06",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii90@infra.net",
+      "requestDate": "22.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0119",
+      "location": "Екатеринбург",
+      "model": "Fujitsu RX2540",
+      "rack": "R22",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va58@hardware.com",
+      "requestDate": "01.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0120",
+      "location": "Краснодар",
+      "model": "DL360 Gen10",
+      "rack": "R20",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii24@infra.net",
+      "requestDate": "05.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0121",
+      "location": "Новосибирск",
+      "model": "PowerEdge R740",
+      "rack": "R12",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii30@hardware.com",
+      "requestDate": "04.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0122",
+      "location": "Красноярск",
+      "model": "ThinkSystem SR650",
+      "rack": "R06",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv1@hardware.com",
+      "requestDate": "24.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0123",
+      "location": "Казань",
+      "model": "Supermicro 2029P",
+      "rack": "R13",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va63@hardware.com",
+      "requestDate": "06.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0124",
+      "location": "Казань",
+      "model": "Fujitsu RX2540",
+      "rack": "R12",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd39@hardware.com",
+      "requestDate": "27.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0125",
+      "location": "Омск",
+      "model": "Fujitsu RX2540",
+      "rack": "R32",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv22@hardware.com",
+      "requestDate": "29.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0126",
+      "location": "Красноярск",
+      "model": "ThinkSystem SR650",
+      "rack": "R28",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv40@it.local",
+      "requestDate": "13.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0127",
+      "location": "Красноярск",
+      "model": "DL360 Gen10",
+      "rack": "R23",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd39@it.local",
+      "requestDate": "26.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0128",
+      "location": "Екатеринбург",
+      "model": "Fujitsu RX2540",
+      "rack": "R04",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd53@hardware.com",
+      "requestDate": "19.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0129",
+      "location": "Казань",
+      "model": "Fujitsu RX2540",
+      "rack": "R18",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va37@hardware.com",
+      "requestDate": "16.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0130",
+      "location": "Новосибирск",
+      "model": "PowerEdge R740",
+      "rack": "R04",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va44@infra.net",
+      "requestDate": "07.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0131",
+      "location": "Москва",
+      "model": "ThinkSystem SR650",
+      "rack": "R11",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en65@it.local",
+      "requestDate": "14.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0132",
+      "location": "Москва",
+      "model": "Fujitsu RX2540",
+      "rack": "R16",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va3@it.local",
+      "requestDate": "25.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0133",
+      "location": "Екатеринбург",
+      "model": "Supermicro 2029P",
+      "rack": "R15",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va71@infra.net",
+      "requestDate": "05.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0134",
+      "location": "Новосибирск",
+      "model": "ThinkSystem SR650",
+      "rack": "R27",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii96@hardware.com",
+      "requestDate": "12.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0135",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R22",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv95@infra.net",
+      "requestDate": "18.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0136",
+      "location": "Екатеринбург",
+      "model": "DL360 Gen10",
+      "rack": "R09",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va39@infra.net",
+      "requestDate": "02.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0137",
+      "location": "Москва",
+      "model": "Supermicro 2029P",
+      "rack": "R02",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii13@it.local",
+      "requestDate": "08.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0138",
+      "location": "Омск",
+      "model": "Fujitsu RX2540",
+      "rack": "R05",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv30@infra.net",
+      "requestDate": "26.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0139",
+      "location": "Новосибирск",
+      "model": "ThinkSystem SR650",
+      "rack": "R37",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en98@it.local",
+      "requestDate": "31.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0140",
+      "location": "Красноярск",
+      "model": "Supermicro 2029P",
+      "rack": "R16",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd97@hardware.com",
+      "requestDate": "16.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0141",
+      "location": "Москва",
+      "model": "DL360 Gen10",
+      "rack": "R14",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii61@it.local",
+      "requestDate": "05.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0142",
+      "location": "Омск",
+      "model": "DL360 Gen10",
+      "rack": "R34",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd39@it.local",
+      "requestDate": "21.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0143",
+      "location": "Екатеринбург",
+      "model": "Fujitsu RX2540",
+      "rack": "R27",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va93@it.local",
+      "requestDate": "08.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0144",
+      "location": "Омск",
+      "model": "PowerEdge R740",
+      "rack": "R23",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en16@hardware.com",
+      "requestDate": "20.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0145",
+      "location": "Омск",
+      "model": "ThinkSystem SR650",
+      "rack": "R38",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii69@infra.net",
+      "requestDate": "13.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0146",
+      "location": "Москва",
+      "model": "ThinkSystem SR650",
+      "rack": "R03",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii1@it.local",
+      "requestDate": "09.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0147",
+      "location": "Москва",
+      "model": "Supermicro 2029P",
+      "rack": "R03",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en9@infra.net",
+      "requestDate": "18.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0148",
+      "location": "Краснодар",
+      "model": "DL360 Gen10",
+      "rack": "R17",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv68@hardware.com",
+      "requestDate": "08.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0149",
+      "location": "Краснодар",
+      "model": "ThinkSystem SR650",
+      "rack": "R27",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va86@it.local",
+      "requestDate": "28.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0150",
+      "location": "Казань",
+      "model": "PowerEdge R740",
+      "rack": "R16",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va61@infra.net",
+      "requestDate": "02.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0151",
+      "location": "Новосибирск",
+      "model": "ThinkSystem SR650",
+      "rack": "R24",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv50@it.local",
+      "requestDate": "30.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0152",
+      "location": "Красноярск",
+      "model": "Supermicro 2029P",
+      "rack": "R27",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv56@infra.net",
+      "requestDate": "24.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0153",
+      "location": "Казань",
+      "model": "Supermicro 2029P",
+      "rack": "R17",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd83@hardware.com",
+      "requestDate": "30.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0154",
+      "location": "Казань",
+      "model": "ThinkSystem SR650",
+      "rack": "R11",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv34@it.local",
+      "requestDate": "02.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0155",
+      "location": "Казань",
+      "model": "Fujitsu RX2540",
+      "rack": "R29",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv32@hardware.com",
+      "requestDate": "30.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0156",
+      "location": "Казань",
+      "model": "Supermicro 2029P",
+      "rack": "R03",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv53@infra.net",
+      "requestDate": "17.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0157",
+      "location": "Омск",
+      "model": "ThinkSystem SR650",
+      "rack": "R25",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd29@infra.net",
+      "requestDate": "16.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0158",
+      "location": "Екатеринбург",
+      "model": "Fujitsu RX2540",
+      "rack": "R32",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv96@it.local",
+      "requestDate": "13.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0159",
+      "location": "Москва",
+      "model": "Fujitsu RX2540",
+      "rack": "R40",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en69@hardware.com",
+      "requestDate": "18.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0160",
+      "location": "Москва",
+      "model": "Fujitsu RX2540",
+      "rack": "R29",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en55@it.local",
+      "requestDate": "26.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0161",
+      "location": "Красноярск",
+      "model": "PowerEdge R740",
+      "rack": "R31",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii57@infra.net",
+      "requestDate": "28.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0162",
+      "location": "Казань",
+      "model": "PowerEdge R740",
+      "rack": "R27",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd75@hardware.com",
+      "requestDate": "28.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0163",
+      "location": "Екатеринбург",
+      "model": "Supermicro 2029P",
+      "rack": "R40",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en20@hardware.com",
+      "requestDate": "26.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0164",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R19",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii86@hardware.com",
+      "requestDate": "30.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0165",
+      "location": "Краснодар",
+      "model": "DL360 Gen10",
+      "rack": "R36",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv42@infra.net",
+      "requestDate": "04.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0166",
+      "location": "Краснодар",
+      "model": "PowerEdge R740",
+      "rack": "R19",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en55@it.local",
+      "requestDate": "01.06.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0167",
+      "location": "Краснодар",
+      "model": "PowerEdge R740",
+      "rack": "R21",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en84@infra.net",
+      "requestDate": "27.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0168",
+      "location": "Краснодар",
+      "model": "Fujitsu RX2540",
+      "rack": "R18",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va41@infra.net",
+      "requestDate": "21.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0169",
+      "location": "Новосибирск",
+      "model": "PowerEdge R740",
+      "rack": "R19",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd48@infra.net",
+      "requestDate": "27.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0170",
+      "location": "Красноярск",
+      "model": "DL360 Gen10",
+      "rack": "R29",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv43@it.local",
+      "requestDate": "11.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0171",
+      "location": "Краснодар",
+      "model": "DL360 Gen10",
+      "rack": "R38",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd47@infra.net",
+      "requestDate": "27.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0172",
+      "location": "Новосибирск",
+      "model": "PowerEdge R740",
+      "rack": "R37",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv0@hardware.com",
+      "requestDate": "26.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0173",
+      "location": "Екатеринбург",
+      "model": "ThinkSystem SR650",
+      "rack": "R39",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv7@hardware.com",
+      "requestDate": "03.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0174",
+      "location": "Новосибирск",
+      "model": "ThinkSystem SR650",
+      "rack": "R08",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va53@it.local",
+      "requestDate": "04.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0175",
+      "location": "Красноярск",
+      "model": "Fujitsu RX2540",
+      "rack": "R04",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd49@infra.net",
+      "requestDate": "06.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0176",
+      "location": "Красноярск",
+      "model": "DL360 Gen10",
+      "rack": "R21",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd29@it.local",
+      "requestDate": "11.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0177",
+      "location": "Казань",
+      "model": "Fujitsu RX2540",
+      "rack": "R16",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en23@it.local",
+      "requestDate": "15.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0178",
+      "location": "Красноярск",
+      "model": "PowerEdge R740",
+      "rack": "R13",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va21@infra.net",
+      "requestDate": "03.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0179",
+      "location": "Новосибирск",
+      "model": "PowerEdge R740",
+      "rack": "R30",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd18@it.local",
+      "requestDate": "19.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0180",
+      "location": "Казань",
+      "model": "DL360 Gen10",
+      "rack": "R21",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en38@it.local",
+      "requestDate": "23.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0181",
+      "location": "Омск",
+      "model": "Fujitsu RX2540",
+      "rack": "R24",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii95@infra.net",
+      "requestDate": "06.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0182",
+      "location": "Новосибирск",
+      "model": "PowerEdge R740",
+      "rack": "R36",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii15@it.local",
+      "requestDate": "11.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0183",
+      "location": "Казань",
+      "model": "ThinkSystem SR650",
+      "rack": "R21",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv81@hardware.com",
+      "requestDate": "25.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0184",
+      "location": "Новосибирск",
+      "model": "Fujitsu RX2540",
+      "rack": "R01",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va56@it.local",
+      "requestDate": "26.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0185",
+      "location": "Новосибирск",
+      "model": "ThinkSystem SR650",
+      "rack": "R14",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en23@hardware.com",
+      "requestDate": "23.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0186",
+      "location": "Красноярск",
+      "model": "DL360 Gen10",
+      "rack": "R20",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va9@it.local",
+      "requestDate": "05.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0187",
+      "location": "Краснодар",
+      "model": "Fujitsu RX2540",
+      "rack": "R25",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv0@infra.net",
+      "requestDate": "03.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0188",
+      "location": "Екатеринбург",
+      "model": "Fujitsu RX2540",
+      "rack": "R40",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en20@it.local",
+      "requestDate": "26.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0189",
+      "location": "Краснодар",
+      "model": "PowerEdge R740",
+      "rack": "R08",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii61@infra.net",
+      "requestDate": "17.04.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0190",
+      "location": "Новосибирск",
+      "model": "Fujitsu RX2540",
+      "rack": "R08",
+      "contact": "Бекетов Р.Д.",
+      "email": "beketov.rd4@hardware.com",
+      "requestDate": "03.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0191",
+      "location": "Новосибирск",
+      "model": "DL360 Gen10",
+      "rack": "R21",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv32@it.local",
+      "requestDate": "21.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0192",
+      "location": "Омск",
+      "model": "DL360 Gen10",
+      "rack": "R05",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv55@hardware.com",
+      "requestDate": "30.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0193",
+      "location": "Омск",
+      "model": "DL360 Gen10",
+      "rack": "R06",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en0@it.local",
+      "requestDate": "26.05.2025",
+      "notes": "Уточнить условия размещения."
+    },
+    {
+      "id": "HW-0194",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R08",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii95@hardware.com",
+      "requestDate": "16.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0195",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R23",
+      "contact": "Ким Е.Н.",
+      "email": "kim.en88@infra.net",
+      "requestDate": "31.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0196",
+      "location": "Краснодар",
+      "model": "DL360 Gen10",
+      "rack": "R22",
+      "contact": "Ткаченко П.В.",
+      "email": "tkachenko.pv30@it.local",
+      "requestDate": "24.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0197",
+      "location": "Екатеринбург",
+      "model": "Fujitsu RX2540",
+      "rack": "R27",
+      "contact": "Иванов И.И.",
+      "email": "ivanov.ii1@it.local",
+      "requestDate": "17.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0198",
+      "location": "Екатеринбург",
+      "model": "ThinkSystem SR650",
+      "rack": "R34",
+      "contact": "Жмышенко В.А",
+      "email": "zhmyshenko.va40@it.local",
+      "requestDate": "21.05.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0199",
+      "location": "Красноярск",
+      "model": "Fujitsu RX2540",
+      "rack": "R09",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv26@infra.net",
+      "requestDate": "27.04.2025",
+      "notes": ""
+    },
+    {
+      "id": "HW-0200",
+      "location": "Омск",
+      "model": "Supermicro 2029P",
+      "rack": "R28",
+      "contact": "Корнеплод В.В.",
+      "email": "korneplod.vv6@hardware.com",
+      "requestDate": "24.05.2025",
+      "notes": ""
+    }
+  ]
+}
