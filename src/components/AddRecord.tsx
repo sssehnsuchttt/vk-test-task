@@ -81,13 +81,13 @@ export function AddRecord({ meta }: { meta: MetaSchema }) {
         <Button size="sm">Добавить запись</Button>
       </DialogTrigger>
 
-      <DialogContent className="sm:max-w-[1024px] sm:max-h-10/12 h-full sm:h-fit flex flex-col rounded-none sm:rounded-lg border-none sm:border">
+      <DialogContent className="sm:max-w-[1024px] sm:w-[calc(100%-3rem)] max-w-full sm:max-h-10/12 h-full sm:h-fit flex flex-col rounded-none sm:rounded-lg border-none sm:border">
         <DialogHeader className="text-left">
           <DialogTitle>Добавить запись</DialogTitle>
           <DialogDescription>Заполни обязательные поля</DialogDescription>
         </DialogHeader>
 
-        <ScrollArea className="flex-1 overflow-hidden pr-4">
+        <ScrollArea className="flex-1 overflow-hidden">
           <Form {...form}>
             <form className="grid gap-4 grid-cols-1 sm:grid-cols-2">
               {editableEntries.map(([key, def]) => (

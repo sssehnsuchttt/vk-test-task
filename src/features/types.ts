@@ -2,6 +2,7 @@ export type FieldDefinition = {
   label: string;
   required?: boolean;
   readOnly?: boolean;
+  type?: "string" | "enum" | "datetime" | "boolean";
   nullable?: boolean;
   minLength?: number;
   maxLength?: number;

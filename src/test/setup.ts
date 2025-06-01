@@ -3,7 +3,7 @@ import { vi } from "vitest";
 
 
 vi.stubGlobal("IntersectionObserver", class {
-  constructor(cb: any) {}
+  constructor() {}
   observe() {}
   disconnect() {}
 });
